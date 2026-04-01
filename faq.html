@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | Artisan Woodworks</title>
+    <meta name="description"
+        content="Everything you need to know about the creation, care, and ordering of handcrafted wood-burned art. Discover our process, pricing, and shipping details.">
+    <meta name="author" content="Artisan Woodworks">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1037/1037815.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fa-solid fa-fire-burner me-2" style="color: var(--accent-color);"></i>
+                <span>ARTISAN</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1 (Classic)</a></li>
+                            <li><a class="dropdown-item" href="home2.html">Home 2 (Story)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button"
+                            data-bs-toggle="dropdown">Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="portfolio.html?all">View All</a></li>
+                            <li><a class="dropdown-item" href="portfolio.html?filter=portraits">Custom Portraits</a>
+                            </li>
+                            <li><a class="dropdown-item" href="portfolio.html?filter=decorative">Decorative Pieces</a>
+                            </li>
+                            <li><a class="dropdown-item" href="portfolio.html?filter=framing">Memorabilia Framing</a>
+                            </li>
+                            <li><a class="dropdown-item" href="portfolio.html?filter=gifts">Nameplates & Gifts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+                    
+                    <!-- Icons & Signup -->
+                    <li class="nav-item ms-lg-3">
+                        <div class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                            <i class="fa-solid fa-moon"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <div class="rtl-toggle" id="rtlToggle" title="Toggle RTL">
+                            <i class="fa-solid fa-language"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="signup.html" class="btn btn-rustic py-2 px-4">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="section-padding bg-beige border-bottom" data-aos="fade-down">
+        <div class="container py-5 text-center">
+            <h1 class="display-3">Frequently Asked Questions</h1>
+            <p class="lead text-muted col-lg-7 mx-auto">Everything you need to know about the creation, care, and ordering of handcrafted permanent wood art.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="accordion accordion-flush premium-accordion" id="faqAccordion">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item mb-4 border-0 shadow-premium rounded-5 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-white py-4 px-5 fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    How is pricing determined for custom work?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body py-4 px-5 text-muted">
+                                    Our pricing is meticulously calculated based on three primary factors: <strong>dimension</strong>, <strong>complexity of detail</strong> (portraits involve intense focus compared to patterns), and the <strong>scarcity of the hardwood</strong>. We provide a comprehensive quote before any burning begins.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item mb-4 border-0 shadow-premium rounded-5 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-white py-4 px-5 fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    What is the typical artisanal turnaround?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body py-4 px-5 text-muted">
+                                    Because pyrography is an unforgiving, slow, and deliberate craft, most custom pieces require <strong>3 to 5 weeks</strong> from finalized design approval. Exceptionally large or intricately shaded portraits may require additional time.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item mb-4 border-0 shadow-premium rounded-5 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-white py-4 px-5 fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    How do I preserve my permanent wood art?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body py-4 px-5 text-muted">
+                                    Our works are finished with museum-grade, UV-resistant sealants. To ensure multi-generational longevity, avoid placing the piece in direct punishing sunlight and maintain a stable indoor environment. Dust gently with a clean, dry microfiber cloth.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item mb-4 border-0 shadow-premium rounded-5 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-white py-4 px-5 fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                    Can I provide my own reference imagery?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body py-4 px-5 text-muted">
+                                    Absolutely. High-resolution, clear photography is ideal for translating emotion to wood. During our consultation, we’ll discuss how the specific grain of the wood will interact with your unique photograph.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item border-0 shadow-premium rounded-5 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-white py-4 px-5 fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                    Do you offer global artisanal shipping?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body py-4 px-5 text-muted">
+                                    Yes, we ship our handcrafted masterworks worldwide. Every international order is meticulously packed, fully insured, and tracked to allow you to monitor its journey to your doorstep.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-block" href="index.html">
+                        <i class="fa-solid fa-fire-burner me-2" style="color: var(--accent-color);"></i>
+                        ARTISAN
+                    </a>
+                    <p class="small opacity-75">Dedicated to the preservation of craftsmanship and the beauty of natural
+                        wood. Hand-burned art and custom framing for the modern collector and sentimental soul.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="me-4 fs-5" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="me-4 fs-5" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#" class="me-4 fs-5" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 ms-auto">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="process.html">Process</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h4>Inspiration</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="home2.html">Story Home</a></li>
+                        <li class="mb-2"><a href="pricing.html">Pricing</a></li>
+                        <li class="mb-2"><a href="testimonials.html">Testimonials</a></li>
+                        <li class="mb-2"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h4>Contact Us</h4>
+                    <p class="small mb-3"><i class="fa-solid fa-location-dot me-3 text-accent"></i> 123 Artisan Way, Woodcreek, CA</p>
+                    <p class="small mb-3"><i class="fa-solid fa-phone me-3 text-accent"></i> (555) 123-4567</p>
+                    <p class="small mb-3"><i class="fa-solid fa-envelope me-3 text-accent"></i> hello@artisanwoodworks.com</p>
+                </div>
+            </div>
+            <hr class="opacity-25 my-5">
+            <div class="text-center small opacity-50">
+                &copy; 2026 Artisan Woodworks. All rights reserved. | Handcrafted in Small Batches with Passion.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

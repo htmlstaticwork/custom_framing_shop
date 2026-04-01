@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Framing Studio | Bespoke Custom Framing & Art Preservation</title>
+    <meta name="description"
+        content="Discover the Artisan Framing Studio for museum-grade custom framing, memorabilia shadowboxes, and heritage art preservation. Elevating your cherished memories with artisanal precision.">
+    <meta name="keywords"
+        content="custom framing, art preservation, memorabilia shadowbox, heritage framing, artisan frames, museum quality framing">
+    <meta name="author" content="Artisan Framing Studio">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1037/1037815.png">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fa-solid fa-fire-burner me-2" style="color: var(--accent-color);"></i>
+                <span>ARTISAN</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <!-- Desktop Home Dropdown -->
+                    <li class="nav-item dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="index.html">Home 1 (Classic)</a></li>
+                            <li><a class="dropdown-item" href="home2.html">Home 2 (Story)</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Mobile Home Links -->
+                    <li class="nav-item d-lg-none"><a class="nav-link active" href="index.html">Home 1 (Classic)</a></li>
+                    <li class="nav-item d-lg-none"><a class="nav-link" href="home2.html">Home 2 (Story)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                    <!-- Icons & Signup -->
+                    <li class="nav-item ms-lg-3">
+                        <div class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                            <i class="fa-solid fa-moon"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <div class="rtl-toggle" id="rtlToggle" title="Toggle RTL">
+                            <i class="fa-solid fa-language"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="signup.html" class="btn btn-rustic py-2 px-4">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/framing_hero_studio.png'); background-size: cover; background-position: center;">
+        <div class="container px-4">
+            <div class="row align-items-center">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h1>Bespoke Custom Framing <br>& Heritage Preservation</h1>
+                    <p class="lead mb-5 text-white col-lg-8 mx-auto">Elevating your most cherished art, memorabilia, and moments with museum-grade craftsmanship and artisanal wood-burned details.</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+                        <a href="portfolio.html" class="btn btn-rustic btn-hero">View Portfolio</a>
+                        <a href="pricing.html" class="btn btn-rustic btn-hero fw-semibold">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Works -->
+    <section class="section-padding bg-premium-dark">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 text-white">The Preservation Gallery</h2>
+                <div class="bg-accent mx-auto"
+                    style="height: 4px; width: 80px; background-color: var(--accent-color); border-radius: 2px;">
+                </div>
+                <p class="mt-4 text-white opacity-75 col-lg-6 mx-auto">A curation of our recent custom framing and memorabilia preservation projects, where every display tells a lasting story.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="art-card shadow-premium bg-white">
+                        <img src="assets/img/memorabilia_shadow_box.png" alt="Museum-grade shadowbox framing" class="img-fluid">
+                        <div class="p-4 text-center">
+                            <h5 class="mb-2 text-accent">Heritage Shadowbox</h5>
+                            <p class="small text-muted mb-0">Archival Memorabilia Display</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="art-card shadow-premium bg-white">
+                        <img src="assets/img/heritage.png" alt="Custom artisanal art frame"
+                            class="img-fluid">
+                        <div class="p-4 text-center">
+                            <h5 class="mb-2 text-accent">Artisan Floating Frame</h5>
+                            <p class="small text-muted mb-0">Hand-finished Reclaimed Oak</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="art-card shadow-premium bg-white">
+                        <img src="assets/img/framing.png" alt="Custom memorabilia framing on oak" class="img-fluid">
+                        <div class="p-4 text-center">
+                            <h5 class="mb-2 text-accent">Legacy Document Frame</h5>
+                            <p class="small text-muted mb-0">Acid-Free Museum Preservation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Preview -->
+    <section class="section-padding explore-section">
+        <div class="container text-center mb-5" data-aos="fade-up">
+            <h2 class="display-6">Explore Our Craft</h2>
+        </div>
+        <div class="container">
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="art-card text-center border bg-beige h-100 d-flex flex-column align-items-center">
+                        <div class="explore-img-container mb-3">
+                            <img src="assets/img/explore_portraits_1775025147825.png"
+                                alt="Wood-burned Portraits Category">
+                        </div>
+                        <div class="px-3 pb-4">
+                            <h4>Portraits</h4>
+                            <p class="small text-muted">Capturing life on wood with precision.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="art-card text-center border bg-white h-100 d-flex flex-column align-items-center">
+                        <div class="explore-img-container mb-3">
+                            <img src="assets/img/explore_decorative_art_1775025171384.png"
+                                alt="Decorative Wood-burning Category">
+                        </div>
+                        <div class="px-3 pb-4">
+                            <h4>Decorative</h4>
+                            <p class="small text-muted">Enhance your space with natural beauty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="art-card text-center border bg-beige h-100 d-flex flex-column align-items-center">
+                        <div class="explore-img-container mb-3">
+                            <img src="assets/img/explore_memorabilia_1775025193418.png"
+                                alt="Fire-burned Memorabilia Category">
+                        </div>
+                        <div class="px-3 pb-4">
+                            <h4>Memorabilia</h4>
+                            <p class="small text-muted">Preserve your journey for generations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="art-card text-center border bg-white h-100 d-flex flex-column align-items-center">
+                        <div class="explore-img-container mb-3">
+                            <img src="assets/img/explore_gifts_artisan_1775025212666.png"
+                                alt="Artisan Wood-burned Gifts Category">
+                        </div>
+                        <div class="px-3 pb-4">
+                            <h4>Gifts</h4>
+                            <p class="small text-muted">Meaningful gestures that last forever.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Craft Section -->
+    <section class="section-padding bg-beige">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <img src="assets/img/studio.png" alt="Artisan wood burning studio"
+                        class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+                    <h2 class="display-6 mb-4">The Soul of the Craft</h2>
+                    <p class="lead mb-4">Wood burning, or <strong>pyrography</strong>, is the ancient art of decorating
+                        wood with burn
+                        marks resulting from the controlled application of a heated object.</p>
+                    <p class="text-muted mb-4">Every piece I create begins with a careful selection of the finest
+                        natural wood, chosen for its
+                        grain and character. Through hours of meticulous burning, I bring stories to life, one line at a
+                        time. It's a slow, rhythmic process that celebrates patience and precision.</p>
+                    <a href="about.html" class="btn btn-rustic mt-3">My Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Preview -->
+    <section class="section-padding">
+        <div class="container text-center mb-5" data-aos="fade-up">
+            <h2>Our Creative Journey</h2>
+            <p class="text-muted">From initial vision to a wood-burned reality.</p>
+        </div>
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-step h-100">
+                        <div class="journey-img-container">
+                            <img src="assets/img/journey-1.png" alt="Creative Step 01: Concept & Design">
+                        </div>
+                        <div class="step-content">
+                            <h4>Concept</h4>
+                            <p>We discuss your vision, references, and style preferences to create a custom design
+                                sketch.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-step h-100">
+                        <div class="journey-img-container">
+                            <img src="assets/img/journey-2.png" alt="Creative Step 02: Detailed Wood Burning">
+                        </div>
+                        <div class="step-content">
+                            <h4>Burn</h4>
+                            <p>The intricate process of etching the design into the wood using professional pyrography
+                                tools.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-step h-100">
+                        <div class="journey-img-container">
+                            <img src="assets/img/journey-3.png" alt="Creative Step 03: Professional Finishing">
+                        </div>
+                        <div class="step-content">
+                            <h4>Finish</h4>
+                            <p>Sanding, sealing, and optional framing to ensure your masterpiece lasts for generations
+                                to
+                                come.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Preview -->
+    <section class="section-padding bg-premium-dark text-center">
+        <div class="container" data-aos="zoom-in">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <i class="fa-solid fa-quote-left fa-4x mb-4 text-accent opacity-50"></i>
+                    <img src="assets/img/michael.png" alt="Michael Henderson Portrait"
+                        class="testimonial-avatar d-block">
+                    <p class="h3 italic mb-5">"The portrait of my grandfather was truly breathtaking. It's more than
+                        art; it's a family heirloom that will be passed down for generations."</p>
+                    <p class="fw-bold fs-4 mb-1">— Michael Henderson</p>
+                    <p class="small text-muted mb-5">Boston, MA | Collector</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding text-center"
+        style="background: linear-gradient(rgba(75, 46, 46, 0.92), rgba(75, 46, 46, 0.92)), url('assets/img/bg-wood.png'); background-size: cover; background-attachment: fixed;">
+        <div class="container text-white py-5" data-aos="fade-up">
+            <h2 class="display-4 mb-4" style="color: #fff;">Bring Your Vision to Life</h2>
+            <p class="lead mb-5 col-lg-6 mx-auto">Ready to start your unique wood-burning project? We're here to help
+                you create something truly unforgettable.</p>
+            <a href="pricing.html" class="btn btn-rustic btn-lg px-5">Request a Custom Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-block" href="index.html">
+                        <i class="fa-solid fa-fire-burner me-2" style="color: var(--accent-color);"></i>
+                        ARTISAN
+                    </a>
+                    <p class="small opacity-75">Dedicated to the preservation of craftsmanship and the beauty of natural
+                        wood. Hand-burned art and custom framing for the modern collector and sentimental soul.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="me-4 fs-5" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="me-4 fs-5" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#" class="me-4 fs-5" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 ms-auto">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="process.html">Process</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h4>Inspiration</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="home2.html">Story Home</a></li>
+                        <li class="mb-2"><a href="pricing.html">Pricing</a></li>
+                        <li class="mb-2"><a href="testimonials.html">Testimonials</a></li>
+                        <li class="mb-2"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h4>Contact Us</h4>
+                    <p class="small mb-3"><i class="fa-solid fa-location-dot me-3 text-accent"></i> 123 Artisan Way,
+                        Woodcreek, CA</p>
+                    <p class="small mb-3"><i class="fa-solid fa-phone me-3 text-accent"></i> (555) 123-4567</p>
+                    <p class="small mb-3"><i class="fa-solid fa-envelope me-3 text-accent"></i>
+                        hello@artisanframing.studio</p>
+                </div>
+            </div>
+            <hr class="opacity-25 my-5">
+            <div class="text-center small opacity-50">
+                &copy; 2026 Artisan Framing Studio. All rights reserved. | Archival Curation and Precision Framing.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

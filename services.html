@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archival Preservation Services | Artisan Framing Studio</title>
+    <meta name="description"
+        content="From museum-grade custom framing to archival art preservation, discovering the meticulous path to protecting your one-of-a-kind masterpieces.">
+    <meta name="author" content="Artisan Framing Studio">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1037/1037815.png">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fa-solid fa-fire-burner me-2" style="color: var(--accent-color);"></i>
+                <span>ARTISAN</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <!-- Desktop Home Dropdown -->
+                    <li class="nav-item dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1 (Classic)</a></li>
+                            <li><a class="dropdown-item" href="home2.html">Home 2 (Story)</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Mobile Home Links -->
+                    <li class="nav-item d-lg-none"><a class="nav-link" href="index.html">Home 1 (Classic)</a></li>
+                    <li class="nav-item d-lg-none"><a class="nav-link" href="home2.html">Home 2 (Story)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                    <!-- Icons & Signup -->
+                    <li class="nav-item ms-lg-3">
+                        <div class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                            <i class="fa-solid fa-moon"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <div class="rtl-toggle" id="rtlToggle" title="Toggle RTL">
+                            <i class="fa-solid fa-language"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="signup.html" class="btn btn-rustic py-2 px-4">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="section-padding bg-beige border-bottom" data-aos="fade-down">
+        <div class="container py-5 text-center">
+            <h1 class="display-3">Our Artisanal Services</h1>
+            <p class="lead mb-0 text-dark col-lg-7 mx-auto">From conceptual sketches to the final burn and custom
+                framing, we offer a dedicated path to creating your one-of-a-kind legacy masterpiece.</p>
+        </div>
+    </section>
+
+    <!-- Service Cards -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Service 1: Custom Framing -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-5 bg-white border border-light border-opacity-10 shadow-premium rounded-5 text-center h-100 art-card">
+                        <div class="mb-5">
+                            <i class="fa-solid fa-crop-simple fa-4x text-accent"></i>
+                        </div>
+                        <h3 class="mb-4">Bespoke Custom Framing</h3>
+                        <p class="mb-5 text-dark">Elevate your memories with museum-grade custom framing. Our frames are handcrafted to match your aesthetic and protect your most valuable art for a lifetime.</p>
+                        <ul class="list-unstyled text-start small mb-5">
+                            <li class="mb-3"><i class="fa-solid fa-check text-accent me-3"></i> Fine Art & Canvas Framing</li>
+                            <li class="mb-3"><i class="fa-solid fa-check text-accent me-3"></i> Memorabilia & Shadowboxes</li>
+                            <li class="mb-0"><i class="fa-solid fa-check text-accent me-3"></i> Handcrafted Hardwood Frames</li>
+                        </ul>
+                        <a href="portfolio.html?filter=framing" class="btn btn-outline-rustic w-100 py-3">See Framing Work</a>
+                    </div>
+                </div>
+                <!-- Service 2: Art Preservation -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-5 bg-white border border-light border-opacity-10 shadow-premium rounded-5 text-center h-100 art-card">
+                        <div class="mb-5">
+                            <i class="fa-solid fa-shield-halved fa-4x text-accent"></i>
+                        </div>
+                        <h3 class="mb-4">Heritage Preservation</h3>
+                        <p class="mb-5 text-dark">We use scientific archival methods to preserve delicate documents and ancient heirlooms. Every material choice is made to prevent aging and damage.</p>
+                        <ul class="list-unstyled text-start small mb-5">
+                            <li class="mb-3"><i class="fa-solid fa-check text-accent me-3"></i> UV-Protective Gallery Glass</li>
+                            <li class="mb-3"><i class="fa-solid fa-check text-accent me-3"></i> Acid-Free Archival Matting</li>
+                            <li class="mb-0"><i class="fa-solid fa-check text-accent me-3"></i> Document Deacidification</li>
+                        </ul>
+                        <a href="portfolio.html?filter=framing" class="btn btn-outline-rustic w-100 py-3">View Preservation</a>
+                    </div>
+                </div>
+                <!-- Service 3: Artistic Embellishment -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-5 bg-white border border-light border-opacity-10 shadow-premium rounded-5 text-center h-100 art-card">
+                        <div class="mb-5">
+                            <i class="fa-solid fa-palette fa-4x text-accent"></i>
+                        </div>
+                        <h3 class="mb-4">Artisanal Signatures</h3>
+                        <p class="mb-5 text-dark">Personalize your frames with hand-burned wood art. Perfect for adding names, dates, or decorative motifs directly onto the frame's molding.</p>
+                        <ul class="list-unstyled text-start small mb-5">
+                            <li class="mb-3"><i class="fa-solid fa-check text-accent me-3"></i> Burned Frame Dedications</li>
+                            <li class="mb-3"><i class="fa-solid fa-check text-accent me-3"></i> Custom-Burned Wooden Mats</li>
+                            <li class="mb-0"><i class="fa-solid fa-check text-accent me-3"></i> Bespoke Artisan Detailing</li>
+                        </ul>
+                        <a href="portfolio.html?filter=gifts" class="btn btn-outline-rustic w-100 py-3">Browse Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meaningful Occasions: Immersive Redesign -->
+    <section class="section-padding bg-premium-dark text-white overflow-hidden">
+        <div class="container text-center mb-5" data-aos="fade-up">
+            <h2 class="display-5 text-white">Art for Every Life Milestone</h2>
+            <p class="opacity-75">Turning fleeting moments into permanent, tangible legacies.</p>
+        </div>
+        <div class="container">
+            <div class="row g-4">
+                <!-- Milestone: Home -->
+                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="milestone-immersive-card">
+                        <div class="milestone-bg" style="background-image: url('assets/img/framing_hero_studio.png');"></div>
+                        <div class="milestone-overlay">
+                            <h5 class="h5">Art Curation</h5>
+                            <p class="small mb-0">Elevating fine art into gallery-worthy centerpieces with precision mounts.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Milestone: Wedding -->
+                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="milestone-immersive-card">
+                        <div class="milestone-bg"
+                            style="background-image: url('https://www.frameminnesota.com/wp-content/uploads/2021/01/D2DB65C6-0D97-42B0-8F62-52C9BB1CE0C2.jpg');">
+                        </div>
+                        <div class="milestone-overlay">
+                            <h5 class="h5">Weddings & Love</h5>
+                            <p class="small mb-0">Commemorate the start of a journey with a piece as enduring as your
+                                commitment.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Milestone: Legacy -->
+                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="milestone-immersive-card">
+                        <div class="milestone-bg" style="background-image: url('assets/img/memorabilia_shadow_box.png');"></div>
+                        <div class="milestone-overlay">
+                            <h5 class="h5">Life's Victories</h5>
+                            <p class="small mb-0">Preserving jerseys, medals, and milestones in high-fidelity shadowboxes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [NEW] Corporate & Branded Commissions -->
+    <section class="section-padding bg-beige border-top">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span class="service-highlight-badge">Commercial Services</span>
+                    <h2 class="display-5 mb-4">Corporate & Branded Commissions</h2>
+                    <p class="lead mb-4">Elevate your brand presence with the warmth and prestige of hand-burned wood
+                        art.</p>
+                    <p class="mb-5 text-dark">From luxury boutique hotels and premium restaurants to corporate
+                        headquarters, we create bespoke wooden assets that leave a lasting impression of quality and
+                        craftsmanship.</p>
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <ul class="list-unstyled small fw-bold">
+                                <li class="mb-3"><i class="fa-solid fa-circle-check text-accent me-2"></i> Branded
+                                    Signage</li>
+                                <li><i class="fa-solid fa-circle-check text-accent me-2"></i> Luxury Coasters</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled small fw-bold">
+                                <li class="mb-3"><i class="fa-solid fa-circle-check text-accent me-2"></i> Table Numbers
+                                </li>
+                                <li><i class="fa-solid fa-circle-check text-accent me-2"></i> Corporate Gifts</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <a href="contact.html" class="btn btn-rustic px-5 py-3">Inquire for Bulk Orders</a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="position-relative">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5fb6c621371cfe25e48cb2f6/764d25b8-e426-41d1-9253-1560893cfc36/Mitrebox%2BStore%2BShot%2B2019.jpeg"
+                            alt="Corporate Branding Wood Detail" class="img-fluid rounded-5 shadow-premium">
+                        <div class="bg-white p-4 rounded-4 shadow-lg position-absolute bottom-0 start-0 m-4 d-none d-md-block"
+                            style="max-width: 250px;">
+                            <p class="small fw-bold mb-0 text-accent">"The tactile nature of wood creates an instant
+                                connection with our guests."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding text-center">
+        <div class="container" data-aos="zoom-in">
+            <h2 class="display-5 mb-4">Ready to Collaborate on a Masterpiece?</h2>
+            <p class="text-muted mb-5 col-lg-6 mx-auto">Each project is a dedicated collaboration. Let's discuss your
+                unique vision and create something truly exceptional together.</p>
+            <a href="contact.html" class="btn btn-rustic btn-lg px-5 py-3">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-block" href="index.html">
+                        <i class="fa-solid fa-fire-burner me-2" style="color: var(--accent-color);"></i>
+                        ARTISAN
+                    </a>
+                    <p class="small opacity-75">Dedicated to the preservation of craftsmanship and the beauty of natural
+                        wood. Hand-burned art and custom framing for the modern collector and sentimental soul.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="me-4 fs-5" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="me-4 fs-5" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#" class="me-4 fs-5" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 ms-auto">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="process.html">Process</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h4>Inspiration</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="home2.html">Story Home</a></li>
+                        <li class="mb-2"><a href="pricing.html">Pricing</a></li>
+                        <li class="mb-2"><a href="testimonials.html">Testimonials</a></li>
+                        <li class="mb-2"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h4>Contact Us</h4>
+                    <p class="small mb-3"><i class="fa-solid fa-location-dot me-3 text-accent"></i> 123 Artisan Way,
+                        Woodcreek, CA</p>
+                    <p class="small mb-3"><i class="fa-solid fa-phone me-3 text-accent"></i> (555) 123-4567</p>
+                    <p class="small mb-3"><i class="fa-solid fa-envelope me-3 text-accent"></i>
+                        hello@artisanframing.studio</p>
+                </div>
+            </div>
+            <hr class="opacity-25 my-5">
+            <div class="text-center small opacity-50">
+                &copy; 2026 Artisan Framing Studio. All rights reserved. | Archival Curation and Precision Framing.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

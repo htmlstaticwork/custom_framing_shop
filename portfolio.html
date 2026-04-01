@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisanal Gallery | Artisan Woodworks</title>
+    <meta name="description"
+        content="Explore our collection of handcrafted wood-burned masterpieces and custom preservation frames. Every piece is unique, reflecting the natural character of the wood.">
+    <meta name="author" content="Artisan Woodworks">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1037/1037815.png">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fa-solid fa-fire-burner me-2" style="color: var(--accent-color);"></i>
+                <span>ARTISAN</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <!-- Desktop Home Dropdown -->
+                    <li class="nav-item dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button"
+                            data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1 (Classic)</a></li>
+                            <li><a class="dropdown-item" href="home2.html">Home 2 (Story)</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Mobile Home Links -->
+                    <li class="nav-item d-lg-none"><a class="nav-link" href="index.html">Home 1 (Classic)</a></li>
+                    <li class="nav-item d-lg-none"><a class="nav-link" href="home2.html">Home 2 (Story)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                    <!-- Icons & Signup -->
+                    <li class="nav-item ms-lg-3">
+                        <div class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                            <i class="fa-solid fa-moon"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <div class="rtl-toggle" id="rtlToggle" title="Toggle RTL">
+                            <i class="fa-solid fa-language"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="signup.html" class="btn btn-rustic py-2 px-4">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="section-padding bg-beige border-bottom" data-aos="fade-down">
+        <div class="container text-center py-5">
+            <h1 class="display-3 mb-4">The Preservation Vault</h1>
+            <p class="lead text-muted mb-5 col-lg-8 mx-auto">Explore our portfolio of museum-grade custom framing and
+                memorabilia shadowboxes. Each piece is an exercise in archival precision and aesthetic sanctuary.</p>
+
+
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <!-- Filters Relocated Here -->
+            <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+                <button class="btn btn-rustic filter-btn active px-4 py-2" data-filter="all">All Preservations</button>
+                <button class="btn btn-outline-rustic filter-btn px-4 py-2" data-filter="framing">Fine Art
+                    Framing</button>
+                <button class="btn btn-outline-rustic filter-btn px-4 py-2"
+                    data-filter="memorabilia">Memorabilia</button>
+                <button class="btn btn-outline-rustic filter-btn px-4 py-2" data-filter="gifts">Personalized</button>
+            </div>
+            <div class="row g-4" id="portfolioGrid">
+                <!-- Item 1: Art Framing -->
+                <div class="col-md-6 col-lg-4 filter-item framing" data-aos="zoom-in" data-aos-delay="100">
+                    <div
+                        class="art-card h-100 shadow-premium rounded-5 overflow-hidden border border-light border-opacity-10 bg-white">
+                        <img src="https://cdn.hibuwebsites.com/68ebf0dac1d1482899bc19361f765537/dms3rep/multi/131373487_2925751417668647_8112804701591142709_n-1920w.jpg"
+                            alt="Custom Art Framing" class="img-fluid w-100">
+                        <div class="p-4 text-center">
+                            <h5 class="mb-2">Gallery Presentation</h5>
+                            <p class="small text-muted mb-0">Museum-grade floating frame for fine art.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2: Memorabilia -->
+                <div class="col-md-6 col-lg-4 filter-item memorabilia" data-aos="zoom-in" data-aos-delay="200">
+                    <div
+                        class="art-card h-100 shadow-premium rounded-5 overflow-hidden border border-light border-opacity-10 bg-white">
+                        <img src="https://heritageart.gallery/wp-content/uploads/2021/02/Fireman-Jacket-Angle-blur-scaled-compressed.jpg"
+                            alt="Heritage Shadowbox" class="img-fluid w-100">
+                        <div class="p-4 text-center">
+                            <h5 class="mb-2">Legacy Shadowbox</h5>
+                            <p class="small text-muted mb-0">High-fidelity preservation of historical artifacts.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3: Personalized -->
+                <div class="col-md-6 col-lg-4 filter-item gifts" data-aos="zoom-in" data-aos-delay="300">
+                    <div
+                        class="art-card h-100 shadow-premium rounded-5 overflow-hidden border border-light border-opacity-10 bg-white">
+                        <img src="assets/img/heritage.png" alt="Hand-burned artisanal frame" class="img-fluid w-100">
+                        <div class="p-4 text-center">
+                            <h5 class="mb-2">The Artisan's Edge</h5>
+                            <p class="small text-muted mb-0">Custom wood-burned detailing on reclaimed oak.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4: Commercial -->
+                <div class="col-md-6 col-lg-4 filter-item gifts" data-aos="zoom-in" data-aos-delay="100">
+                    <div
+                        class="art-card h-100 shadow-premium rounded-5 overflow-hidden border border-light border-opacity-10 bg-white">
+                        <img src="assets/img/portrait.png" alt="Commercial Wood Branding" class="img-fluid w-100">
+                        <div class="p-4 text-center">
+                            <h5 class="mb-2">Bespoke Enterprise Signage</h5>
+                            <p class="small text-muted mb-0">Deep-burned branding for hospitality.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5: Process Highlights -->
+                <div class="col-md-6 col-lg-4 filter-item decorative" data-aos="zoom-in" data-aos-delay="200">
+                    <div
+                        class="art-card h-100 shadow-premium rounded-5 overflow-hidden border border-light border-opacity-10 bg-white">
+                        <img src="assets/img/decorative.png" alt="Artisan Pyrography Process" class="img-fluid w-100">
+                        <div class="p-4 text-center">
+                            <h5 class="mb-2">Traditional Lineage</h5>
+                            <p class="small text-muted mb-0">Mastering heat and hearth.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 6: Gifts -->
+                <div class="col-md-6 col-lg-4 filter-item gifts" data-aos="zoom-in" data-aos-delay="300">
+                    <div
+                        class="art-card h-100 shadow-premium rounded-5 overflow-hidden border border-light border-opacity-10 bg-white">
+                        <img src="assets/img/explore_gifts_artisan_1775025212666.png" alt="Custom Wood Gifts"
+                            class="img-fluid w-100">
+                        <div class="p-4 text-center">
+                            <h5 class="mb-2">Sentimental Tokens</h5>
+                            <p class="small text-muted mb-0">Personalized gifts on natural wood.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Preservation Lab -->
+    <section class="section-padding bg-premium-dark text-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="display-5 mb-4">The Preservation Lab</h2>
+                    <p class="lead opacity-75 mb-5">Peer behind the curtain of the Artisan Curation. Our studio is a
+                        clean-environment sanctuary where fine art meets archival science. We don't just frame art; we
+                        protect history through meticulous precision and passion.</p>
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="border-start border-accent border-4 ps-3">
+                                <h4 class="mb-1">100%</h4>
+                                <p class="small mb-0 opacity-50">Acid-Free Materials</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="border-start border-accent border-4 ps-3">
+                                <h4 class="mb-1">Museum</h4>
+                                <p class="small mb-0 opacity-50">Grade Preservation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <img src="https://preservationandframing.com/wp-content/uploads/2022/04/PF-09085.jpeg"
+                                alt="Preservation Lab" class="img-fluid rounded-4 shadow-lg w-100"
+                                style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="col-6">
+                            <img src="https://images.squarespace-cdn.com/content/v1/586efe775016e17f5f51e4c5/54fcab94-15f5-42dd-94ba-a7451a2b0aa5/fine+art+archival+framing+nyc+brooklyn-14.jpg"
+                                alt="Archival Detail" class="img-fluid rounded-4 shadow-lg w-100"
+                                style="height: 200px; object-fit: cover;">
+                        </div>
+                        <div class="col-6">
+                            <img src="assets/img/framing.png" alt="Heritage Frame"
+                                class="img-fluid rounded-4 shadow-lg w-100"
+                                style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Bespoke Signature Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5">The Bespoke Signature</h2>
+                <div class="heritage-accent-line mx-auto"></div>
+                <p class="text-muted col-lg-6 mx-auto">Beyond portraits and frames, we collaborate with businesses and
+                    enthusiasts to create specialized signatures—pieces that define a space or a moment.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6" data-aos="flip-up">
+                    <div class="art-card bg-beige p-5 rounded-5 border-0 h-100">
+                        <i class="fa-solid fa-hotel fs-1 text-accent mb-4"></i>
+                        <h3>Hospitality & Retail</h3>
+                        <p class="text-muted">Direct branding and signage for restaurants, cafes, and boutique hotels
+                            that value tactical, organic aesthetics.</p>
+                        <a href="contact.html" class="btn btn-outline-rustic mt-3">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="flip-up" data-aos-delay="200">
+                    <div class="art-card bg-premium-dark p-5 rounded-5 border-0 h-100 text-white">
+                        <i class="fa-solid fa-trophy fs-1 text-accent mb-4"></i>
+                        <h3>Custom Memorabilia</h3>
+                        <p class="opacity-75">From military records to heirloom certificates, we create the physical
+                            vessel for your family's most important milestones.</p>
+                        <a href="contact.html" class="btn btn-rustic mt-3">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-block" href="index.html">
+                        <i class="fa-solid fa-fire-burner me-2" style="color: var(--accent-color);"></i>
+                        ARTISAN
+                    </a>
+                    <p class="small opacity-75">Dedicated to the preservation of craftsmanship and the beauty of natural
+                        wood. Hand-burned art and custom framing for the modern collector and sentimental soul.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="me-4 fs-5" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="me-4 fs-5" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#" class="me-4 fs-5" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 ms-auto">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="process.html">Process</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h4>Inspiration</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="home2.html">Story Home</a></li>
+                        <li class="mb-2"><a href="pricing.html">Pricing</a></li>
+                        <li class="mb-2"><a href="testimonials.html">Testimonials</a></li>
+                        <li class="mb-2"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h4>Contact Us</h4>
+                    <p class="small mb-3"><i class="fa-solid fa-location-dot me-3 text-accent"></i> 123 Artisan Way,
+                        Woodcreek, CA</p>
+                    <p class="small mb-3"><i class="fa-solid fa-phone me-3 text-accent"></i> (555) 123-4567</p>
+                    <p class="small mb-3"><i class="fa-solid fa-envelope me-3 text-accent"></i>
+                        hello@artisanframing.studio</p>
+                </div>
+            </div>
+            <hr class="opacity-25 my-5">
+            <div class="text-center small opacity-50">
+                &copy; 2026 Artisan Framing Studio. All rights reserved. | Archival Curation and Precision Framing.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Check URL parameters for initial filter
+        document.addEventListener('DOMContentLoaded', function () {
+            const params = new URLSearchParams(window.location.search);
+            const initialFilter = params.get('filter') || params.get('all') ? 'all' : null;
+            if (initialFilter) {
+                const btn = document.querySelector(`.filter-btn[data-filter="${initialFilter}"]`);
+                if (btn) btn.click();
+            }
+        });
+    </script>
+</body>
+
+</html>
