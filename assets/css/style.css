@@ -360,11 +360,32 @@ a.nav-link:hover,
   display: flex;
   flex-direction: column;
   height: 100%;
+  color: var(--dark-text);
 }
 
 .art-card:hover {
   transform: translateY(-15px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-img-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.service-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.art-card:hover .service-img-container img {
+  transform: scale(1.08);
 }
 
 .explore-img-container {
@@ -532,14 +553,20 @@ a.nav-link:hover,
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.back-to-top.visible {
-  opacity: 1;
-  visibility: visible;
+.back-to-top.active {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+@media (max-width: 767.98px) {
+  .back-to-top {
+    display: none !important;
+  }
 }
 
 .back-to-top:hover {
   background-color: var(--primary-color);
-  transform: scale(1.1);
+  transform: translateY(-5px);
 }
 
 @media (max-width: 768px) {
@@ -606,6 +633,15 @@ footer .small {
   }
 }
 
+.bg-accent {
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+}
+
+.ls-1 {
+  letter-spacing: 1px !important;
+}
+
 .text-accent {
   color: var(--accent-color);
 }
@@ -631,15 +667,6 @@ footer .small {
   color: #ffffff !important;
 }
 
-/* Ensure card text is visible even in dark sections */
-.art-card h5,
-.art-card p {
-  color: inherit !important;
-}
-
-.art-card .text-muted {
-  color: var(--muted-text) !important;
-}
 
 /* DARK MODE TEXT OVERRIDES */
 [data-theme="dark"] .text-muted {
@@ -717,9 +744,15 @@ footer .small {
 }
 
 [data-theme="dark"] .form-control,
-[data-theme="dark"] .form-select {
-  border-color: rgba(245, 230, 204, 0.15);
-  background-color: rgba(255, 255, 255, 0.03);
+[data-theme="dark"] .form-select,
+[data-theme="dark"] .input-group-text {
+  border-color: rgba(245, 230, 204, 0.15) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .input-group-text i {
+  color: #a0aec0 !important;
 }
 
 .form-control:focus,
@@ -727,6 +760,13 @@ footer .small {
   box-shadow: 0 0 0 4px rgba(192, 86, 33, 0.1);
   border-color: var(--accent-color);
   background-color: var(--white);
+  color: var(--dark-text);
+}
+
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus {
+  background-color: #2d2d2d;
+  color: #ffffff !important;
 }
 
 [data-theme="dark"] .btn-outline-dark {
@@ -834,4 +874,274 @@ footer .small {
   background-color: var(--primary-color) !important;
   color: var(--white) !important;
   border-color: var(--primary-color) !important;
+}
+
+/* FINAL OVERRIDES FOR PRESERVATION GALLERY VISIBILITY */
+.bg-premium-dark .art-card h5.text-accent {
+  color: var(--accent-color) !important;
+}
+
+.bg-premium-dark .art-card p:not(.text-muted) {
+  color: var(--dark-text) !important;
+}
+
+.bg-premium-dark .art-card .text-muted {
+  color: var(--muted-text) !important;
+}
+
+.bg-premium-dark .art-card h5:not(.text-accent) {
+  color: var(--primary-color) !important;
+}
+
+/* MILESTONE CARDS */
+.milestone-immersive-card {
+  position: relative;
+  height: 450px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  background-color: #000;
+  transition: var(--transition);
+  margin-bottom: 20px;
+}
+
+.milestone-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 1s ease;
+  opacity: 0.6;
+}
+
+.milestone-immersive-card:hover .milestone-bg {
+  transform: scale(1.1);
+  opacity: 0.4;
+}
+
+.milestone-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  color: #fff;
+  transition: var(--transition);
+  z-index: 2;
+}
+
+.milestone-immersive-card:hover .milestone-overlay {
+  transform: translateY(-10px);
+}
+
+/* Ensure equal height cards and parallel buttons */
+.art-card {
+  flex: 1 0 auto;
+}
+
+.col-lg-4.d-flex .art-card {
+  width: 100%;
+}
+
+.art-card ul.text-center {
+  display: inline-block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CONTACT PAGE SPECIFICS */
+.contact-social-link {
+  transition: var(--transition);
+  display: inline-block;
+}
+
+.contact-social-link:hover {
+  color: var(--accent-color) !important;
+  transform: translateY(-5px);
+}
+
+/* Correcting hover specificity for dark backgrounds */
+.bg-premium-dark .contact-social-link:hover i {
+  color: var(--accent-color) !important;
+}
+
+.google-map-frame {
+  width: 100%;
+  height: 500px;
+  border: none;
+  display: block;
+}
+
+/* RESPONSIVE REFINEMENTS (Tablet & Mobile) */
+@media (max-width: 1199.98px) {
+  /* Home 2 Hero Centering & Single Column */
+  header.container-fluid {
+    text-align: center;
+    background-color: var(--secondary-color);
+  }
+  
+  header.container-fluid .row.align-items-center {
+    flex-direction: column !important;
+  }
+  
+  header.container-fluid .col-lg-6 {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+  
+  header.container-fluid .col-lg-6.d-flex.align-items-center {
+    padding-top: 5rem !important;
+    padding-bottom: 2rem !important;
+    justify-content: center !important;
+  }
+  
+  header.container-fluid .ms-lg-5 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center !important;
+  }
+  
+  header.container-fluid .overlap-stack {
+    height: 350px;
+    margin: 2rem auto !important;
+    max-width: 500px;
+    justify-content: center !important;
+  }
+  
+  header.container-fluid .d-flex.gap-3 {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  header.container-fluid .btn-hero {
+    width: 100% !important;
+    max-width: 300px !important;
+  }
+
+  /* Contact Page Sidebar to Full-Width-TOP (Order 1) */
+  .col-lg-4.contact-info-col {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    order: 1 !important; /* Top */
+    margin-bottom: 4rem;
+  }
+  
+  .col-lg-8.contact-form-col {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    order: 2 !important; /* Bottom */
+  }
+
+  .contact-info-col .bg-premium-dark {
+    text-align: center !important;
+    width: 100%;
+  }
+  
+  .contact-info-col .d-flex {
+    justify-content: center !important;
+    text-align: left;
+  }
+
+  /* Typography Polish */
+  .contact-info-email {
+    overflow-wrap: anywhere;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Hero Buttons Stack */
+@media (max-width: 575.98px) {
+  header.container-fluid .d-flex.gap-3 {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  
+  .btn-hero {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Portfolio Bespoke Section Alignment */
+.portfolio-bespoke-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100%;
+}
+
+.portfolio-bespoke-card .btn {
+  margin-top: auto !important;
+}
+
+/* Social Hover Fix Specificity Overrides */
+.contact-social-link:hover i,
+.contact-social-link-item:hover i,
+.contact-info-col .contact-social-link:hover i,
+footer .contact-social-link:hover i,
+[data-theme="dark"] footer .contact-social-link-search-item:hover i,
+[data-theme="dark"] .contact-social-link:hover i {
+  color: var(--accent-color) !important;
+  opacity: 1 !important;
+  transform: translateY(-5px);
+  transition: var(--transition);
+}
+
+/* Specific fix for footer icons in dark mode */
+[data-theme="dark"] footer a:hover i {
+    color: var(--accent-color) !important;
+}
+
+/* Button Hover Dark Transition */
+.btn-rustic:hover,
+.btn-hero:hover,
+.btn-outline-rustic:hover {
+  background-color: #1a1a1a !important;
+  border-color: #1a1a1a !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Password Toggle Eye Icon Border Fix */
+.password-toggle-btn {
+  border-left: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.input-group > .form-control:not(:last-child) {
+  border-right: none !important;
+}
+
+.input-group-text {
+  border-radius: 12px;
+  background-color: var(--light-bg);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 1rem;
+}
+
+.input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.input-group > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }

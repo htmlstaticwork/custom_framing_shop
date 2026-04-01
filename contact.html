@@ -92,7 +92,7 @@
         <div class="container">
             <div class="row g-5">
                 <!-- Info Column -->
-                <div class="col-lg-4" data-aos="fade-right">
+                <div class="col-lg-4 contact-info-col" data-aos="fade-right">
                     <div class="p-4 p-lg-5 bg-premium-dark rounded-5 shadow-premium h-100 border border-light border-opacity-10">
                         <h3 class="mb-5">Connect With Us</h3>
                         <p class="text-muted mb-5">Whether you're looking for a gift, home decor, or custom framing, we're here to discuss all the details.</p>
@@ -115,44 +115,44 @@
                             <i class="fa-solid fa-envelope mt-1 me-4 text-accent fs-3"></i>
                             <div>
                                 <h6 class="mb-2">Email Us</h6>
-                                <p class="small text-muted mb-0">hello@artisanwoodworks.com</p>
+                                <p class="small text-muted mb-0 contact-info-email">hello@artisanwoodworks.com</p>
                             </div>
                         </div>
 
                         <div class="mt-5 text-center">
                             <h6 class="mb-4">Follow the Craft</h6>
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="mx-3 fs-3 text-accent"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#" class="mx-3 fs-3 text-accent"><i class="fa-brands fa-pinterest"></i></a>
-                                <a href="#" class="mx-3 fs-3 text-accent"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="mx-3 fs-3 text-accent contact-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="mx-3 fs-3 text-accent contact-social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                                <a href="#" class="mx-3 fs-3 text-accent contact-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Form Column -->
-                <div class="col-lg-8" data-aos="fade-left">
+                <div class="col-lg-8 contact-form-col" data-aos="fade-left">
                     <div class="p-4 p-lg-5 bg-white shadow-premium rounded-5 border h-100">
                         <h2 class="mb-5">Direct Message</h2>
                         <form class="row g-4 needs-validation" id="contactForm" novalidate>
                             <div class="col-md-6">
                                 <label class="form-label fw-semibold">Your Name</label>
-                                <input type="text" class="form-control" required placeholder="Full Name">
+                                <input type="text" class="form-control" name="name" required placeholder="Full Name">
                                 <div class="invalid-feedback">Please provide your name.</div>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label fw-semibold">Email Address</label>
-                                <input type="email" class="form-control" required placeholder="Email Address">
+                                <input type="email" class="form-control" name="email" required placeholder="Email Address">
                                 <div class="invalid-feedback">Please provide a valid email.</div>
                             </div>
                             <div class="col-12">
                                 <label class="form-label fw-semibold">Subject</label>
-                                <input type="text" class="form-control" required placeholder="Project Inquiry / General Question">
+                                <input type="text" class="form-control" name="subject" required placeholder="Project Inquiry / General Question">
                                 <div class="invalid-feedback">Please provide a subject.</div>
                             </div>
                             <div class="col-12">
                                 <label class="form-label fw-semibold">Your Message</label>
-                                <textarea class="form-control" rows="6" required placeholder="How can we help you? Describe your vision or ask any questions..."></textarea>
+                                <textarea class="form-control" name="message" rows="6" required placeholder="How can we help you? Describe your vision or ask any questions..."></textarea>
                                 <div class="invalid-feedback">Please leave a message.</div>
                             </div>
                             <div class="col-12 text-center mt-5">
@@ -180,8 +180,8 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="row g-5 mb-5">
-                <div class="col-lg-4">
+            <div class="row g-5 mb-5 align-items-start">
+                <div class="col-lg-6 col-xl-4">
                     <a class="navbar-brand mb-4 d-block" href="index.html">
                         <i class="fa-solid fa-fire-burner me-2" style="color: var(--accent-color);"></i>
                         ARTISAN
@@ -194,7 +194,7 @@
                         <a href="#" class="me-4 fs-5" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-2 ms-auto">
+                <div class="col-md-6 col-lg-6 col-xl-2 ms-auto">
                     <h4>Quick Links</h4>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="portfolio.html">Portfolio</a></li>
@@ -203,7 +203,7 @@
                         <li class="mb-2"><a href="about.html">About</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-lg-2">
+                <div class="col-md-6 col-lg-6 col-xl-2">
                     <h4>Inspiration</h4>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="home2.html">Story Home</a></li>
@@ -212,7 +212,7 @@
                         <li class="mb-2"><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-6 col-lg-6 col-xl-3">
                     <h4>Contact Us</h4>
                     <p class="small mb-3"><i class="fa-solid fa-location-dot me-3 text-accent"></i> 123 Artisan Way, Woodcreek, CA</p>
                     <p class="small mb-3"><i class="fa-solid fa-phone me-3 text-accent"></i> (555) 123-4567</p>
