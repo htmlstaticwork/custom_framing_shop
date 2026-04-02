@@ -35,9 +35,20 @@
   --shadow-premium: 0 10px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* RTL SUPPORT */
-[dir="rtl"] {
-  text-align: right;
+/* RTL SUPPORT - Default to LTR */
+html:not([dir="rtl"]) {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+html[dir="rtl"] {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+[dir="rtl"] body {
+  direction: rtl !important;
+  text-align: right !important;
 }
 
 [dir="rtl"] .ms-auto {
@@ -55,8 +66,17 @@ body {
   color: var(--dark-text);
   font-family: var(--body-font);
   line-height: 1.8;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
   transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+html {
+  overflow-x: hidden !important;
+  width: 100vw;
+  max-width: 100%;
 }
 
 h1,
@@ -69,6 +89,8 @@ h6 {
   color: var(--primary-color);
   font-weight: 700;
   letter-spacing: -0.02em;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 /* NAVBAR STYLES */
@@ -558,11 +580,7 @@ a.nav-link:hover,
   visibility: visible !important;
 }
 
-@media (max-width: 767.98px) {
-  .back-to-top {
-    display: none !important;
-  }
-}
+/* No display:none here to allow responsive styling below */
 
 .back-to-top:hover {
   background-color: var(--primary-color);
@@ -572,18 +590,18 @@ a.nav-link:hover,
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 30px;
-    /* Better accessibility for small screens */
     right: 20px;
     width: 45px;
     height: 45px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     opacity: 0;
     visibility: hidden;
+    display: flex !important; /* Ensure it is visible if active */
   }
 
   .back-to-top.active {
-    opacity: 1;
-    visibility: visible;
+    opacity: 1 !important;
+    visibility: visible !important;
   }
 }
 
@@ -609,7 +627,12 @@ footer a {
   /* Force heritage cream for visibility */
   text-decoration: none;
   transition: var(--transition);
-  opacity: 0.9;
+}
+
+footer .small.opacity-50 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 footer a:hover {
@@ -727,12 +750,23 @@ footer .small {
   background-color: var(--light-bg);
   color: var(--dark-text);
   transition: var(--transition);
+  text-align: left;
 }
 
 .form-control::placeholder,
 .form-select::placeholder {
   color: var(--muted-text);
   opacity: 0.6;
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+html[dir="rtl"] .form-control,
+html[dir="rtl"] .form-control::placeholder,
+html[dir="rtl"] .form-select,
+html[dir="rtl"] .form-select::placeholder {
+  text-align: right !important;
+  direction: rtl !important;
 }
 
 [data-theme="dark"] .form-control::placeholder,
@@ -788,9 +822,10 @@ footer .small {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 991.98px) {
+/* MEDIA QUERIES - BREAKPOINT UPDATED TO 1200px (XL) FOR 1024px HAMBURGER */
+@media (max-width: 1199.98px) {
   .hero-section h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .navbar-nav {
@@ -803,6 +838,67 @@ footer .small {
 
   .nav-link {
     margin: 10px 0;
+  }
+
+  /* Title Overflow Fix */
+  .display-3 {
+    font-size: 3rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-section h1 {
+    font-size: 2.4rem;
+  }
+
+  .display-3 {
+    font-size: 2.5rem !important;
+  }
+
+  .form-label {
+    text-align: left !important;
+    display: block;
+    width: 100%;
+  }
+
+  .auth-card {
+    max-width: 100% !important;
+    margin: 20px auto !important;
+    border-radius: 1rem !important;
+  }
+  
+  .auth-body {
+    padding: 1.5rem !important;
+  }
+
+  .social-auth-btn {
+    flex-direction: column;
+    padding: 10px !important;
+    font-size: 10px !important;
+  }
+  
+  .social-auth-btn span {
+    display: none; /* Hide text on very small screens to prevent overflow if needed, or wrap */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .display-3 {
+    font-size: 2rem !important;
+  }
+
+  .navbar .container {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  /* Spacing improvements for smaller screens */
+  .section-padding {
+    padding: 40px 0;
   }
 }
 
