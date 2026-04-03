@@ -71,6 +71,7 @@ body {
   max-width: 100%;
   position: relative;
   transition: background-color 0.4s ease, color 0.4s ease;
+  padding-top: 80px;
 }
 
 html {
@@ -95,6 +96,12 @@ h6 {
 
 /* NAVBAR STYLES */
 .navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1030;
   background-color: var(--glass-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -106,7 +113,11 @@ h6 {
 .navbar.scrolled {
   padding: 0.8rem 0;
   box-shadow: var(--shadow-premium);
+  background-color: var(--glass-bg);
 }
+
+/* Body padding-top to prevent content from hiding behind the fixed navbar
+   is set in the canonical body rule above. */
 
 .navbar-brand {
   font-family: var(--heading-font);
@@ -225,6 +236,9 @@ a.nav-link:hover,
 .hero-section {
   position: relative;
   height: 100vh;
+  margin-top: -80px;
+  /* Pull hero behind the fixed navbar for full-bleed coverage */
+  padding-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -596,7 +610,8 @@ a.nav-link:hover,
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     opacity: 0;
     visibility: hidden;
-    display: flex !important; /* Ensure it is visible if active */
+    display: flex !important;
+    /* Ensure it is visible if active */
   }
 
   .back-to-top.active {
@@ -866,7 +881,7 @@ html[dir="rtl"] .form-select::placeholder {
     margin: 20px auto !important;
     border-radius: 1rem !important;
   }
-  
+
   .auth-body {
     padding: 1.5rem !important;
   }
@@ -876,9 +891,10 @@ html[dir="rtl"] .form-select::placeholder {
     padding: 10px !important;
     font-size: 10px !important;
   }
-  
+
   .social-auth-btn span {
-    display: none; /* Hide text on very small screens to prevent overflow if needed, or wrap */
+    display: none;
+    /* Hide text on very small screens to prevent overflow if needed, or wrap */
   }
 }
 
