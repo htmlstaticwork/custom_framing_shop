@@ -217,6 +217,10 @@ a.nav-link:hover,
   color: var(--primary-color);
 }
 
+.rtl-toggle {
+  margin-left: 12px;
+}
+
 /* NAVBAR TOGGLER DARK MODE */
 [data-theme="dark"] .navbar-toggler-icon {
   filter: invert(1) brightness(1.5);
@@ -406,11 +410,10 @@ a.nav-link:hover,
 
 .service-img-container {
   width: 100%;
-  height: 250px;
+  height: 280px;
   overflow: hidden;
-  border-radius: 20px;
-  margin-bottom: 2rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 0;
+  box-shadow: none;
 }
 
 .service-img-container img {
@@ -433,7 +436,7 @@ a.nav-link:hover,
   align-items: center;
   justify-content: center;
   background-color: rgba(75, 46, 46, 0.02);
-  padding: 15px;
+
 }
 
 .explore-img-container img {
@@ -563,10 +566,7 @@ a.nav-link:hover,
   border: 10px solid var(--white);
 }
 
-.collage-item:hover {
-  transform: scale(1.03);
-  z-index: 3;
-}
+/* Collage items no longer have hover effects */
 
 /* BACK TO TOP */
 .back-to-top {
